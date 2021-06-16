@@ -1,0 +1,74 @@
+{
+  "name": "rock-paper-lizard-spock-1-gjrwuf",
+  "version": "1.0.0",
+  "description": "coding challenge for Sennder",
+  "main": "public/index.html",
+  "repository": "http://sennder-wqycgh@git.codesubmit.io/sennder/rock-paper-lizard-spock-1-gjrwuf",
+  "author": "<pratik.d.galoria@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack --watch",
+    "start": "webpack serve",
+    "test": "jest --coverage"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "classnames": "^2.3.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-use": "^17.2.4"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.3.1",
+    "@types/enzyme": "^3.10.8",
+    "@types/jest": "^26.0.23",
+    "@types/react": "^17.0.9",
+    "@types/react-dom": "^17.0.6",
+    "@types/react-router-dom": "^5.1.7",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.1",
+    "autoprefixer": "^10.2.6",
+    "css-loader": "^5.2.6",
+    "enzyme": "^3.11.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.0.4",
+    "jsdom": "^16.6.0",
+    "mini-css-extract-plugin": "^1.6.0",
+    "node-sass": "^6.0.0",
+    "optimize-css-assets-webpack-plugin": "^6.0.0",
+    "postcss-loader": "^5.3.0",
+    "sass-loader": "^12.0.0",
+    "terser-webpack-plugin": "^5.1.3",
+    "ts-jest": "^27.0.3",
+    "ts-loader": "^9.2.2",
+    "typescript": "^4.3.2",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "jsdom",
+    "setupFiles": [
+      "./src/setupTests.ts"
+    ],
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleNameMapper": {
+      "\\.(scss|css|less)$": "identity-obj-proxy"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "node_modules",
+      "index.ts",
+      "index.tsx"
+    ],
+    "coverageReporters": [
+      "text"
+    ]
+  }
+}

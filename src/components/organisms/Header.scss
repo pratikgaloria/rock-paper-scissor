@@ -1,0 +1,21 @@
+@import '../../styles/base.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px 24px;
+  border: 2px solid $color-text-header;
+  border-radius: 10px;
+
+  svg {
+    width: 96px;
+    height: 60px;
+
+    @include media-desktop {
+      width: 162px;
+      height: 99px;
+    }
+  }
+}

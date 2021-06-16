@@ -1,0 +1,8 @@
+$bp-mobile: 375px;
+$bp-desktop: 1366px;
+
+@mixin media-desktop {
+  @media (min-width: $bp-mobile + 1) {
+    @content;
+  }
+}

@@ -1,0 +1,52 @@
+@import "../../../styles/base.scss";
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  cursor: pointer;
+
+  &-primary {
+    padding: 16px 32px;
+    background-color: white;
+    border-radius: 6px;
+    color: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    @include media-desktop {
+      padding: 8px 32px;
+      font-size: 12px;
+    }
+
+    &:hover {
+      color: red;
+      box-shadow: 2px 2px 8px #000;
+    }
+  }
+
+  &-outlined {
+    padding: 8px 32px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 6px;
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    &:hover {
+      box-shadow: 2px 2px 8px #000;
+    }
+  }
+
+  &-plain {
+    background-color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,121 @@
+@import "../../../styles/base.scss";
+
+.initial {
+  position: relative;
+  justify-self: center;
+  width: 100%;
+  height: 320px;
+
+  @include media-desktop {
+    width: 400px;
+    height: 400px;
+  }
+
+  &-triangle {
+    svg {
+      width: 280px;
+
+      @include media-desktop {
+        width: 305px;
+      }
+    }
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.icon {
+  svg {
+    width: 48px;
+
+    @include media-desktop {
+      width: 100%;
+    }
+  }
+
+  &-1 {
+    position: absolute;
+    top: 0;
+  }
+  
+  &-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  &-3 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -25%);
+  }
+}
+
+.game {
+  display: grid;
+  grid-gap: 32px;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+
+  width: 100%;
+  height: 480px;
+
+  @include media-desktop {
+    grid-template-columns: 1fr auto 1fr;
+    height: 220px;
+  }
+
+  &-pad-button {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    text-align: center;
+    height: 180px;
+
+    @include media-desktop {
+      flex-direction: column;
+      height: 100%;
+    }
+
+    > span {
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+
+      @include media-desktop {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &-result {
+    display: grid;
+    grid-gap: 12px;
+    grid-column: 1 / span 2;
+    align-content: center;
+    text-align: center;
+    order: 3;
+
+    @include media-desktop {
+      order: unset;
+      grid-column: unset;
+    }
+
+    > span {
+      color: white;
+      text-transform: uppercase;
+      font-size: 64px;
+
+      @include media-desktop {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+

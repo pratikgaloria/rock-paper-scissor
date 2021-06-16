@@ -1,0 +1,43 @@
+@mixin ripples($color, $growthField, $size) {
+  &:before {
+    content: '';
+    width: $size/2 + px;
+    height: $size/2 + px;
+    position: absolute;
+    border-radius: 100%;
+    animation: ripple1 1.5s ease-in-out;
+    animation-iteration-count: infinite;
+    z-index: -1;
+  }
+
+  &:after {
+    content: '';
+    width: $size + px;
+    height: $size + px;
+    position: absolute;
+    border-radius: 100%;
+    animation: ripple2 1.5s ease-in-out;
+    animation-iteration-count: infinite;
+    z-index: -1;
+  }
+
+  @keyframes ripple1 {
+    0% {
+      border: 1px solid transparent;
+    }
+    100% {
+      border: $growthField*.8 + px solid darken($color, 25%);
+      opacity: 0
+    }
+  }
+
+  @keyframes ripple2 {
+    0% {
+      border: 1px solid transparent;
+    }
+    100% {
+      border: $growthField + px solid darken($color, 50%);
+      opacity: 0
+    }
+  }
+}
