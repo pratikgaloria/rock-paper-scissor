@@ -1,9 +1,9 @@
 {
-  "name": "rock-paper-lizard-spock-1-gjrwuf",
+  "name": "rock-paper-scissor",
   "version": "1.0.0",
-  "description": "coding challenge for Sennder",
+  "description": "rock-paper-scissor game",
   "main": "public/index.html",
-  "repository": "http://sennder-wqycgh@git.codesubmit.io/sennder/rock-paper-lizard-spock-1-gjrwuf",
+  "repository": "https://github.com/pratikgaloria/rock-paper-scissor/",
   "author": "<pratik.d.galoria@gmail.com>",
   "license": "MIT",
   "scripts": {
